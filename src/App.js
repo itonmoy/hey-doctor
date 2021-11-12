@@ -12,6 +12,7 @@ import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import AuthProvider from './context/Authprovider/AuthProvider';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+import Dashboard from './Pages/DashBoard/DashBoard/Dasboard';
 
 
 function App() {
@@ -28,6 +29,9 @@ function App() {
           </Route>
           <PrivateRoute exact path="/appointment">
             <Appointment></Appointment>
+          </PrivateRoute>
+          <PrivateRoute  path="/dashboard">
+            <Dashboard></Dashboard>
           </PrivateRoute>
           <Route path="/login">
             <Login></Login>

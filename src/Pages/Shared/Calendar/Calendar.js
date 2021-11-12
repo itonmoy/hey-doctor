@@ -15,7 +15,7 @@ const Calendar = ({date , setDate}) => {
         
             value={date}
             onChange={(newValue) => {
-            setDate(newValue);
+                setDate(newValue);
             }}
             renderInput={(params) => <TextField {...params} />}
         />
